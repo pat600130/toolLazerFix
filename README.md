@@ -1,6 +1,8 @@
 # ExampleMod
 
-A [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for [Resonite](https://resonite.com/) that does something.
+A [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for [Resonite](https://resonite.com/) that fixes the issue where the lazer is mirrored from tool to tip
+
+
 <!-- Edit to describe what your mod does and what it may solve -->
 <!-- If your mod solves an issue, you should link to any relevant issues on the resonite github -->
 
