@@ -11,23 +11,32 @@
 
 	<PropertyGroup Condition="'$(ResonitePath)'==''">
 		<!-- If you don't want to provide a ResonitePath in dotnet build, you can specify one here -->
-		<ResonitePath>$(MSBuildThisFileDirectory)Resonite/</ResonitePath>
+		<ResonitePath>B:\SteamLibrary\steamapps\common\Resonite\</ResonitePath>
 		<ResonitePath Condition="Exists('C:\Program Files (x86)\Steam\steamapps\common\Resonite\')">C:\Program Files (x86)\Steam\steamapps\common\Resonite\</ResonitePath>
 		<ResonitePath Condition="Exists('$(HOME)/.steam/steam/steamapps/common/Resonite/')">$(HOME)/.steam/steam/steamapps/common/Resonite/</ResonitePath>
 	</PropertyGroup>
 
 	<ItemDefinitionGroup>
-		<Reference Private="False"/>
+		<Reference Private="False" />
 	</ItemDefinitionGroup>
-	
-	<ItemGroup>
-		<PackageReference Include="ResoniteModLoader" Version="5.0.1" />
-		<PackageReference Include="Lib.Harmony" Version="2.4.2" />
-		<Reference Include="FrooxEngine" HintPath="$(ResonitePath)FrooxEngine.dll" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<EmbeddedResource Include="Locale\*.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="0Harmony">
+	    <HintPath>..\..\..\..\..\..\AppData\Roaming\r2modmanPlus-local\Resonite\profiles\Default\rml_libs\0Harmony.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Elements.Core">
+	    <HintPath>B:\SteamLibrary\steamapps\common\Resonite\Elements.Core.dll</HintPath>
+	  </Reference>
+	  <Reference Include="FrooxEngine">
+	    <HintPath>B:\SteamLibrary\steamapps\common\Resonite\FrooxEngine.dll</HintPath>
+	  </Reference>
+	  <Reference Include="ResoniteModLoader">
+	    <HintPath>..\..\..\..\..\..\AppData\Roaming\r2modmanPlus-local\Resonite\profiles\Default\Libraries\ResoniteModLoader.dll</HintPath>
+	  </Reference>
 	</ItemGroup>
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(CopyToMods)'=='true'">

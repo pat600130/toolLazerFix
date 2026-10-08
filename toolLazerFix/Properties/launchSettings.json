@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "toolLazerFix": {
+      "commandName": "Project"
+    },
+    "run reso": {
+      "commandName": "Executable",
+      "executablePath": "B:\\SteamLibrary\\steamapps\\common\\Resonite\\Resonite.exe",
+      "commandLineArgs": "\"--hookfxr-enable\" \"--bepinex-target\" \"C:\\Users\\pat60\\AppData\\Roaming\\r2modmanPlus-local\\Resonite\\profiles\\Default\\BepInEx\" \"--doorstop-enabled\" \"true\" \"--doorstop-target-assembly\" \"C:\\Users\\pat60\\AppData\\Roaming\\r2modmanPlus-local\\Resonite\\profiles\\Default\\Renderer\\BepInEx\\core\\BepInEx.Preloader.dll\""
+    }
+  }
+}
